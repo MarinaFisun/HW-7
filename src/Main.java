@@ -10,6 +10,8 @@ public class Main {
         task6();
         task7();
         task8();
+        task9();
+        task10();
     }
 
     public static void task1() {
@@ -66,9 +68,23 @@ public class Main {
         int sum = 0;
         int part = 29000;
         for (int i = 1; i <= 12; i++) {
-            sum+=part;
-            System.out.println("Месяц " + i+ " сумма накоплений равна " + sum + " рублей");
+            sum += part;
+            System.out.println("Месяц " + i + " сумма накоплений равна " + sum + " рублей");
         }
     }
 
+    public static void task9() {
+        System.out.println("Task 9");
+        double forStart = 0;
+        double part = 29000;
+        double percent = 0.01;
+                for (int i = 1; i <= 12; i++) {
+                    forStart = (forStart + part) * (1+percent);
+            System.out.println("Месяц " + i + " сумма накоплений равна " + forStart + " рублей");
+        }
+    }
+    public static void task10() {
+        System.out.println("Task 10");
+
+    }
 }
